@@ -1,0 +1,34 @@
+﻿# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Terraform
+infrastructure/.terraform
+infrastructure/*.backup
+infrastructure/*.hcl
+infrastructure/*.tfstate
+
+# PEFT checkpoints
+qwen2.5-lora
+
+# Model adapter
+qwen2.5-1.5b-lora/*
+
+# inputs
+data/*
+!data/.gitkeep
+
+# Outputs
+output/*
+!output/.gitkeep
+
+# LoRA model adapter
+qwen2.5-1.5b-lora/*
+!qwen2.5-1.5b-lora/.gitkeep
